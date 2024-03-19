@@ -41,12 +41,7 @@ clean:
 	$(MAKE) clean -e -C util_spectral_scan
 
 install:
-	$(MAKE) install -e -C libloragw
 	$(MAKE) install -e -C packet_forwarder
-	$(MAKE) install -e -C util_net_downlink
-	$(MAKE) install -e -C util_chip_id
-	$(MAKE) install -e -C util_boot
-	$(MAKE) install -e -C util_spectral_scan
 
 install_conf:
 	$(MAKE) install_conf -e -C packet_forwarder
