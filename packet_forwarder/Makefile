@@ -1,7 +1,3 @@
-### get external defined data
-
-include ../target.cfg
-
 ### Application-specific constants
 
 APP_NAME := lora_pkt_fwd
@@ -54,11 +50,13 @@ clean:
 
 install:
 	cp lora_pkt_fwd /usr/local/bin/
-	mkdir -p /etc/lora_pktt_fwd/
-	cp reset_lgw.sh /etc/lora_pkt_fwd/
+	cp reset_lgw.sh /usr/local/bin/
+	chmod +x /usr/local/bin/reset_lgw.sh
+	cp lora_pkt_fwd.service /etc/systemd/system/
+	systemctl daemon-reload
 
 install_conf:
-	mkdir -p /etc/lora_pkt_fwd/
+	mkdir -p /etc/lora_pkt_fwd
 	cp global_conf.json.sx1250.* /etc/lora_pkt_fwd/
 	cp global_conf.json.sx1255.* /etc/lora_pkt_fwd/
 	cp global_conf.json.sx1257.* /etc/lora_pkt_fwd/
