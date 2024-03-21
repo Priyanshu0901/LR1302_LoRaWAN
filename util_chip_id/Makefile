@@ -1,7 +1,3 @@
-### get external defined data
-
-include ../target.cfg
-
 ### User defined build options
 
 ARCH ?=
