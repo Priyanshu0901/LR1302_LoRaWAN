@@ -49,6 +49,7 @@ clean:
 	rm -f $(APP_NAME)
 
 install:
+	mkdir -p /etc/lora_pkt_fwd
 	cp lora_pkt_fwd /usr/local/bin/
 	cp reset_lgw.sh /usr/local/bin/
 	chmod +x /usr/local/bin/reset_lgw.sh
