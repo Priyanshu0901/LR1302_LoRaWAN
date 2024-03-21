@@ -7,7 +7,8 @@ export
 ### general build targets
 
 .PHONY: all clean install install_conf libtools libloragw packet_forwarder util_net_downlink util_chip_id util_boot util_spectral_scan
-
+#Default to only make the core and not utils
+core: libtools libloragw packet_forwarder
 all: libtools libloragw packet_forwarder util_net_downlink util_chip_id util_boot util_spectral_scan
 
 libtools:
