@@ -44,8 +44,8 @@
             "rssi_offset": -215.4,
             "rssi_tcomp": {"coeff_a": 0, "coeff_b": 0, "coeff_c": 20.41, "coeff_d": 2162.56, "coeff_e": 0},
             "tx_enable": true,
-            "tx_freq_min": 863000000,
-            "tx_freq_max": 870000000,
+            "tx_freq_min": 865000000,
+            "tx_freq_max": 867000000,
             "tx_gain_lut":[
                 {"rf_power": 12, "pa_gain": 0, "pwr_idx": 15},
                 {"rf_power": 13, "pa_gain": 0, "pwr_idx": 16},
@@ -90,7 +90,7 @@
     "gateway_conf": {
         "gateway_ID": "8822222222222222",
         /* change with default server address/ports */
-        "server_address": "eu1.cloud.thethings.network",
+        "server_address": "localhost",
         "serv_port_up": 1700,
         "serv_port_down": 1700,
         /* adjust the following parameters for your network */
